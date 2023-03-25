@@ -13,3 +13,6 @@ class Activation:
     
     def relu(self, x):
         return np.maximum(0, x)
+    
+    def leakyRelu(self, x):
+        return np.maximum(0.01*x, x)
